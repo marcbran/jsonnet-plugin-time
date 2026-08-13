@@ -70,10 +70,10 @@ func consumeCalendarUnits(s string) (rest string, years, months, days int) {
 		suffix byte
 		apply  func(n int)
 	}{
-		{'Y', func(n int) { years += n }},
+		{'y', func(n int) { years += n }},
 		{'M', func(n int) { months += n }},
-		{'W', func(n int) { days += n * 7 }},
-		{'D', func(n int) { days += n }},
+		{'w', func(n int) { days += n * 7 }},
+		{'d', func(n int) { days += n }},
 	}
 
 	for _, unit := range units {

@@ -28,12 +28,12 @@ func TestAddDurationSpec(t *testing.T) {
 		},
 		{
 			name: "days",
-			spec: "7D",
+			spec: "7d",
 			want: ref.AddDate(0, 0, 7),
 		},
 		{
 			name: "weeks",
-			spec: "2W",
+			spec: "2w",
 			want: ref.AddDate(0, 0, 14),
 		},
 		{
@@ -43,13 +43,18 @@ func TestAddDurationSpec(t *testing.T) {
 		},
 		{
 			name: "years account for leap days",
-			spec: "1Y",
+			spec: "1y",
 			want: ref.AddDate(1, 0, 0),
 		},
 		{
 			name: "every unit at once",
-			spec: "1Y2M3W4D5h6m7s",
+			spec: "1y2M3w4d5h6m7s",
 			want: ref.AddDate(1, 2, 3*7+4).Add(5*stdtime.Hour + 6*stdtime.Minute + 7*stdtime.Second),
+		},
+		{
+			name: "lowercase m is minute, not month",
+			spec: "1m",
+			want: ref.Add(1 * stdtime.Minute),
 		},
 		{
 			name: "negative sign subtracts",
