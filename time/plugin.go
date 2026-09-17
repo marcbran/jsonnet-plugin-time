@@ -9,6 +9,7 @@ func Plugin(name string, opts ...jpoet.PluginOption) *jpoet.Plugin {
 	return jpoet.NewPlugin(name, []jsonnet.NativeFunction{
 		Now(),
 		AddDuration(),
-		ParseRFC3339(),
+		Parse(),
+		Format(),
 	}, opts...)
 }

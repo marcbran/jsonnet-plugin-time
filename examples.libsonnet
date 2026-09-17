@@ -15,11 +15,15 @@ p.ex({
     name: 'negative duration',
     inputs: [0, '-90s'],
   }]),
-  parseRFC3339: p.ex([{
-    name: 'utc timestamp',
-    inputs: ['2026-08-04T00:00:00Z'],
+  parse: p.ex([{
+    name: 'rfc3339 utc timestamp',
+    inputs: ['2026-08-04T00:00:00Z', '2006-01-02T15:04:05Z07:00'],
   }, {
     name: 'timestamp with an explicit offset',
-    inputs: ['2026-08-04T02:00:00+02:00'],
+    inputs: ['2026-08-04T02:00:00+02:00', '2006-01-02T15:04:05Z07:00'],
+  }]),
+  format: p.ex([{
+    name: 'date and time',
+    inputs: [1754265600000, '2006-01-02 15:04'],
   }]),
 })
