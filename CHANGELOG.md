@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/marcbran/jsonnet-plugin-time/compare/v0.2.0...v0.3.0) (2026-09-17)
+
+
+### Features
+
+* format and parse functions ([#14](https://github.com/marcbran/jsonnet-plugin-time/issues/14)) ([432fbff](https://github.com/marcbran/jsonnet-plugin-time/commit/432fbff6966fe2013817deaab0dd4c589ef6e120))
+
 ## [0.2.0](https://github.com/marcbran/jsonnet-plugin-time/compare/v0.1.0...v0.2.0) (2026-09-09)
 
 
