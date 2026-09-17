@@ -15,7 +15,10 @@ p.pkg({
   addDuration: p.desc(|||
     Adds a signed duration spec (e.g. `2h30m`, `1y2M3w4d`, `-6h`) to `epochMs`, returning the resulting epoch milliseconds.
   |||),
-  parseRFC3339: p.desc(|||
-    Parses an RFC3339 timestamp (e.g. `2026-08-04T00:00:00Z`) into epoch milliseconds.
+  parse: p.desc(|||
+    Parses a timestamp string using a Go reference-time layout (e.g. `2006-01-02T15:04:05Z07:00`) into epoch milliseconds.
+  |||),
+  format: p.desc(|||
+    Formats `epochMs` using a Go reference-time layout (e.g. `2006-01-02 15:04`), returning a string.
   |||),
 })
