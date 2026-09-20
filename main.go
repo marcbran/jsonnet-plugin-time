@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	time.Plugin("time").Serve()
+	time.Plugin().Serve()
 }
