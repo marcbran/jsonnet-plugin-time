@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/marcbran/jsonnet-plugin-time/compare/v0.3.0...v0.3.1) (2026-09-20)
+
+
+### Bug Fixes
+
+* use hardcoded plugin name ([#17](https://github.com/marcbran/jsonnet-plugin-time/issues/17)) ([37a8e98](https://github.com/marcbran/jsonnet-plugin-time/commit/37a8e98135c239d116e227f17f697e7d19203c22))
+
 ## [0.3.0](https://github.com/marcbran/jsonnet-plugin-time/compare/v0.2.0...v0.3.0) (2026-09-17)
 
 
